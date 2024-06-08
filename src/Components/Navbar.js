@@ -13,30 +13,33 @@ export const Navbar = () => {
                 <span></span>
             </div>
             <div><h3 className="title">
-                 Website</h3></div>
-            
+                Website</h3></div>
+
             <div>
-            <ul className={menuOpen ? "open" : ""}>
-                 
-                <li>
-                <NavLink className="focus" to="/">Home</NavLink>
-                </li>
-                <li>
-                <NavLink className="focus" to="/about">About</NavLink>
-                </li>
-                <li>
-                <NavLink className="focus" to={"/services"}>Services</NavLink>
-                </li>
-                <li>
-                    <NavLink className="focus" to="/contact">Contact</NavLink>
-                </li>
-                  <button className="btn1">
-                     Signup
-                        </button>
-                  <button className="btn2">
-                      Signout
-                       </button>
-            </ul>
+                <ul className={menuOpen ? "open" : ""}>
+
+                    <li>
+                        <NavLink className="focus" to="/">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="focus" to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="focus" to="/services">Services</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="focus" to="/contact">Contact</NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink className="focus" to="/Signup">Signup</NavLink>
+                    </li>
+
+                     <li>
+                     <NavLink className="focus" to="/Signout">Signout</NavLink>
+                    </li>
+                    
+                </ul>
             </div>
         </nav>
     );

@@ -96,35 +96,22 @@ nav .menu span {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     }
+
+    .btn1{
+        text-align: center;
+        align-items: center;
+        margin: 0.2rem 0.2rem;
+        margin-left:20  px;
+    }    
 }
 
-.btn1
-{
-    display: block;
-    text-decoration: none;
-    color:white;
-    border:none;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    background-color: transparent; 
-     border-radius: 10px;
-}
+
 
 .btn1:hover {   
     background-color: #172554;
 }
 
-.btn2
-{
-    display: block;
-    text-decoration: none;
-    color:white;
-    border:none;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    background-color: transparent; 
-    border-radius: 10px;
-}
+
 
 
 .btn2:hover {   

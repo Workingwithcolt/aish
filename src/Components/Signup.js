@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import {getAuth,createUserWithEmailAndPassword, onAuthStateChanged} from "firebase/auth"
 import {app} from "../Components/Firebase"
+import './Signup.css'
 
 
 const auth = getAuth(app);
@@ -23,10 +24,18 @@ console.log(user)
 
   return (
     <div className="signup-page">
-        <label>Email</label>
-        <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" required placeholder='Enter your email here'/>
-        <label>Password</label>
-        <input value={password} type="Password" onChange={(e)=>setPassword(e.target.value)} required placeholder='Enter your password here'/>
+        <div className="lable1">
+          <label>Email</label>
+          <input value={email} onChange={(e)=>setEmail(e.target.value)} 
+           type="email" required placeholder='Enter your email here'/>
+        </div>
+        
+        <div className='label2'>
+          <label>Password</label>
+           <input value={password} type="Password" onChange={(e)=>setPassword(e.target.value)}
+           required placeholder='Enter your password here'/>
+        </div>
+        
         <button onClick={createuser}>Signup</button>
     </div>
   )
